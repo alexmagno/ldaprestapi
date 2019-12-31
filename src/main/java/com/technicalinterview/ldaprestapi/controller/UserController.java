@@ -2,7 +2,7 @@ package com.technicalinterview.ldaprestapi.controller;
 
 import java.util.List;
 
-import com.technicalinterview.ldaprestapi.domain.CreatedUserDTO;
+import com.technicalinterview.ldaprestapi.domain.DTO.CreatedUserDTO;
 import com.technicalinterview.ldaprestapi.domain.User;
 import com.technicalinterview.ldaprestapi.service.UserService;
 import org.springframework.beans.factory.annotation.Autowired;

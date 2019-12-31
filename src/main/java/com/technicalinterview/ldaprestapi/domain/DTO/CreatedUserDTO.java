@@ -1,4 +1,6 @@
-package com.technicalinterview.ldaprestapi.domain;
+package com.technicalinterview.ldaprestapi.domain.DTO;
+
+import com.technicalinterview.ldaprestapi.domain.User;
 
 public class CreatedUserDTO {
 
