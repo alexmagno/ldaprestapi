@@ -8,8 +8,6 @@ import javax.naming.Name;
 import javax.naming.directory.Attributes;
 import javax.naming.directory.BasicAttribute;
 import javax.naming.directory.BasicAttributes;
-import javax.naming.directory.SearchControls;
-
 import com.technicalinterview.ldaprestapi.domain.User;
 import com.technicalinterview.ldaprestapi.utils.UserAttributesMapper;
 import org.springframework.beans.factory.annotation.Autowired;
