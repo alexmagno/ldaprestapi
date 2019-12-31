@@ -1,13 +1,12 @@
-#Desafio Técnico - ldaprestapi
+# Desafio Técnico - ldaprestapi
 
 Este projeto é referente ao teste técnico da vaga #GDP-436
 
 Para configurar o OPENLDAP Server, é preciso seguir as instruções passadas no desafio:
 
-#Service 1:  OPENLDAP Server
+# OPENLDAP Server
 
 Description:
-
 
 Install OpenLDAP Server.
 
@@ -49,6 +48,7 @@ The following command will create a OU(organizationalUnit) to hold your users:
 
 ldapmodify -h localhost -p 389 -w '123456' -D 'cn=admin,dc=techinterview,dc=com'  <  create_ou_users.ldif
 
+# API
 
 Para rodar o projeto é necesário baixá-lo e importá-lo, preferencialmente na IDE Intellij Idea.
 
