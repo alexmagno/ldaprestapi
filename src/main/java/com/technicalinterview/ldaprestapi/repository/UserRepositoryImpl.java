@@ -28,8 +28,6 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public List<User> getAll() {
-        SearchControls searchControls = new SearchControls();
-        searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
         List<User> users = ldapTemplate.search(query().base(USERS_OU_DN).where("objectClass").is("inetOrgPerson"),
                 new UserAttributesMapper());
         return users;
@@ -37,8 +35,6 @@ public class UserRepositoryImpl implements UserRepository {
 
     @Override
     public User getOne(String userId) {
-        SearchControls searchControls = new SearchControls();
-        searchControls.setSearchScope(SearchControls.SUBTREE_SCOPE);
         List<User> users = ldapTemplate.search(query().base(USERS_OU_DN).where("uid").is(userId),
                 new UserAttributesMapper());
 
